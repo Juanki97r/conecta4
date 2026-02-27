@@ -26,11 +26,12 @@ public class Juego {
 
     }
 
-    public void rellenar(int columna, char jugador){
+    public void colocar(int columna, char jugador){
         int controlador = 1;
         boolean salir;
         do{
            salir = true;
+           
             if(tablero[FILAS-controlador][columna]=='\0'){
                 tablero[FILAS-controlador][columna]=jugador;
             salir=false;
@@ -41,15 +42,7 @@ public class Juego {
             
             
         } while(salir);
-        // for(int i = 0; i<FILAS;i++){
-            
-        //     for(int j =0; j<COLUMNAS; j++){
-                
-        //         tablero[FILAS+controlador][columna]= jugador;
-                
-        //     }
-            
-        // }
+       
     }
 
 
