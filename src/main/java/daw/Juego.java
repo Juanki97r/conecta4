@@ -26,7 +26,7 @@ public class Juego {
 
     }
 
-    public void colocar(int columna, char jugador){
+    public int colocar(int columna, char jugador){
         int controlador = 1;
         boolean salir;
         do{
@@ -42,7 +42,7 @@ public class Juego {
             
             
         } while(salir);
-       
+       return FILAS-controlador;
     }
 
     public boolean comprobarFichas(Juego juego, char jugador,int fila, int columna,  int direccionFila,int direccionColumna){
