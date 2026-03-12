@@ -39,6 +39,7 @@ public class Main {
                 }
                 }  catch (IndexOutOfBoundsException iobe) {
                     System.out.println("esa columna esta llena");
+                    turnoJugador--;
                 }
                 turnoJugador++;
             } else {
@@ -63,6 +64,7 @@ public class Main {
                 }
             } catch (IndexOutOfBoundsException iobe) {
                 System.out.println("Esta columna esta llena ");
+                turnoJugador--;
             }
                 turnoJugador++;
             }
